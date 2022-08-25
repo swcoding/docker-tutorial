@@ -9,4 +9,4 @@ setup: ## Upgrade the pip and then install poetry
 
 .PHONY: deploy
 deploy: ## deploys backend at port 8000
-		uvicorn lesson1.backend.app:app --reload
+		uvicorn backend.app:app --reload
