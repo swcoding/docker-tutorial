@@ -2,12 +2,10 @@
 name = "backend"
 version = "0.1.0"
 description = ""
-authors = ["Schwannden Kuo <schwannden@mobagel.com>"]
+authors = ["Jeffery Wang <jeffery.wang@mobagel.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-uvicorn = "^0.18.2"
-fastapi = "^0.79.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
