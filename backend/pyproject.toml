@@ -6,6 +6,8 @@ authors = ["Jeffery Wang <jeffery.wang@mobagel.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+uvicorn = "^0.18.3"
+fastapi = "^0.80.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
