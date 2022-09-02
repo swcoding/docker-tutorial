@@ -4,11 +4,10 @@ RUN apt-get update && pip3 install --upgrade pip && pip install poetry
 
 WORKDIR /app
 COPY pyproject.toml poetry.lock .
-
 RUN poetry config virtualenvs.create false \
   && poetry install --no-interaction --no-ansi --no-dev
 
-COPY ./backend /app
+CMD uvicorn app:app --host 0.0.0.0 --reload
 
 # RUN pip install --prefix=/install -r /requirements/requirements.txt
 
